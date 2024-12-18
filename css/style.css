@@ -1,0 +1,227 @@
+/* CSS reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-hight: 59px;
+    
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+/*Navigation Bar-- logo and image */
+
+#logo{
+  margin: 3px 6px;
+
+}
+#logo img{
+    margin: 3px 6px;
+    height: 84px;
+    border-radius: 42px;
+}
+/*Navigation Bar-- styling list */
+
+#navbar ul{
+    display: flex;
+}
+
+/* background banauna lai ::berfore ko use gare */
+#navbar ul li{
+   
+    list-style: none;
+    font-size: 1.3rem;
+    border-style: none
+} 
+#navbar ul li a{
+    display: block;
+    padding: 6px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+} 
+#navbar ul li a:hover{
+      color: black;
+      background-color: white
+}
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 95px;
+    height: 630px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before{
+    content: "";
+    background: url(../img/spaghetti-1932466_1280.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 73%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h1{
+    text-align: center;
+    color: white;
+    font-size: 3.8rem;
+   font-family: 'Baloo Bhai';
+}
+#home p{
+       color: white;
+       align-items: center;
+       font-size: 2.8rem;
+}
+/* services section */
+#services{
+    display: flex;
+    margin: 47px;
+
+}
+#services .box{
+    border: 2px solid brown;
+    text-align: center;
+    padding: 34px;
+    margin: 22px 20px;
+    border-radius: 26px;
+    background-color: rgb(230, 221, 221);
+    
+}
+#services .box img{
+    height:160px;
+    margin: auto;
+    display: block;
+}
+ /* clint-section */
+ #clints{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+ }
+ #clints img{
+    height: 116px;
+ }
+ #clints-section{
+    height: 334px;
+    position: relative;
+ }
+ #clints-section::before{
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.4;
+   background: url(../network-4636686_1920.jpg);
+
+ }
+ .clints-item{
+    padding: 34px;
+
+ }
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../phone-4961455_1920.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    font-family: "Baloo Paaji 2", sans-serif;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+.footer{
+    color: white;
+    background: black;
+    text-align: center;
+    font-size: small;
+    padding: 9px 26px;
+}
+
+
+
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    color: black;
+   font-family: 'Baloo Bhai';
+   justify-items: center;
+
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    color: white;
+}
+.btn {
+    font-family: 'Baloo Bhai';font-size: 22px;
+    height: 67px;
+    padding: 9px 19px;
+    border: 2px solid gray;
+    background-color:skyblue;
+    color: white;
+    margin: 60px;
+    border-radius: 27px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: green;
+    color: black; 
+}
+.center{
+    text-align: center;
+    
+}
