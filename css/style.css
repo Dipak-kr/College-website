@@ -77,7 +77,7 @@ html{
 
 #home::before{
     content: "";
-    background: url(../img/spaghetti-1932466_1280.jpg) no-repeat center center/cover;
+    background: url(../background4.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -89,13 +89,14 @@ html{
 }
 #home h1{
     text-align: center;
-    color: white;
+    color:white;
     font-size: 3.8rem;
-   font-family: 'Baloo Bhai';
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #home p{
-       color: white;
+       color:white;
        align-items: center;
+       font-family:Arial, Helvetica, sans-serif;
        font-size: 2.8rem;
 }
 /* services section */
@@ -117,6 +118,7 @@ html{
     height:160px;
     margin: auto;
     display: block;
+    border-radius: 24px;
 }
  /* clint-section */
  #clints{
