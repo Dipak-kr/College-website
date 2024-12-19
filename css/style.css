@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    /* background-color: rgb(193, 255, 255); */
 }
 html{
     scroll-behavior: smooth;
@@ -32,7 +33,9 @@ html{
 /*Navigation Bar-- logo and image */
 
 #logo{
-  margin: 3px 6px;
+ 
+    margin: 3px 1250px 0px 12px;
+
 
 }
 #logo img{
@@ -81,7 +84,7 @@ html{
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 76%;
+    height: 70%;
     width: 100%;
     z-index: -1;
     opacity: 0.89;
@@ -102,26 +105,200 @@ html{
     font-size: 1.8rem;
     padding: 1px;
 }
+
+/* about us section */
+
+#About{
+    display: block;
+    margin: 0px;
+
+}
+.aboutbox{
+    border: 2px solid brown;
+    text-align: center;
+    padding: 34px;
+    margin: 22px 20px;
+    border-radius: 26px;
+    background-color: rgb(210, 232, 246);
+    display: flex;
+    height: 325px;
+    /* flex-direction: column; */
+}
+ .aboutbox img{
+   
+    border-radius: 73px;
+    padding: 0px 19px;
+    height: 337px;
+}
+/* .aboutclz
+{
+    margin-left: 200px;
+    flex-direction: column;
+    height: 34px;
+    width: 44px;
+    
+}  */
+
+.aboutclz {
+   
+    /* margin-bottom: 143px; */
+    flex: 83;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 88px 110px;
+    height: 61px;
+    margin: -57px 60px;
+    font-size: 30px;
+}
+
+.aboutclz h2 {
+    font-size: 3.8rem;
+    text-align: left; /* Align text to the left */
+    animation: fadeIn 2s ease-in-out; /* Adding animation */
+}
+#abt-head{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: -1px;
+    font-size: 20px;
+}
+
+
+/******************** PROJECTS ********************/
+
+.main-text {
+    padding-top: 80px;
+  }
+  
+  .main-text h2 {
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  .main-text h2 span {
+    color: #0ef;
+  }
+  
+  .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+  }
+  
+  .projectrow {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 12px;
+  }
+  
+  .projectimg img {
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    transition: transform 0.5s;
+  }
+  
+  .layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+  }
+  
+  .layer h5 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+  }
+   /* Our program */
+
+  .layer p {
+    columns: #000;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .layer i {
+    color: #ff004f;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .row:hover img {
+    transform: scale(1.1);
+  }
+  
+  .row:hover .layer {
+    height: 100%;
+  }
+
 /* services section */
 #services{
     display: flex;
     margin: 47px;
 
 }
+
 #services .box{
     border: 2px solid brown;
     text-align: center;
     padding: 34px;
     margin: 22px 20px;
     border-radius: 26px;
-    background-color: rgb(230, 221, 221);
+    background-color: rgb(236, 231, 223);
     
+    
+}
+#services .box:hover{
+    
+    background-color: rgb(158, 222, 222);
 }
 #services .box img{
     height:160px;
-    margin: auto;
+    margin: auto;background-color: rgb(147, 180, 215);
     display: block;
     border-radius: 24px;
+}
+#services .box img{
+    height:160px;
+    margin: auto;background-color: rgb(147, 180, 215);
+    display: block;
+    border-radius: 24px;
+}
+
+.centre-pr{
+    font-size:23px;
+    
+    padding: 5px 4px;
+
 }
  /* clint-section */
  #clints{
@@ -132,10 +309,10 @@ html{
     
  }
  #clints img{
-    height: 116px;
+    height: 70px;
  }
  #clints-section{
-    height: 334px;
+    height: 330px;
     position: relative;
  }
  #clints-section::before{
@@ -153,6 +330,7 @@ html{
 
  }
 /* contact section */
+
 #contact{
     position: relative;
 }
@@ -163,7 +341,7 @@ html{
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background: url(../phone-4961455_1920.jpg) no-repeat center center/cover;
+    background: url(../contact-back.jpg) no-repeat center center/cover;
 }
 #contact-box{
     display: flex;
@@ -186,7 +364,7 @@ html{
     font-size: 1.3rem;
 }
 
-#footer{
+.ft-center{
     color: white;
     background: black;
     text-align: center;
@@ -201,7 +379,7 @@ html{
     font-size: 2.8rem;
     padding: 12px;
     color: black;
-   font-family: 'Baloo Bhai';
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    justify-items: center;
 
 }
@@ -227,7 +405,8 @@ html{
     color: black; 
 }
 .center{
-    text-align: center;
-    padding: 3px;
     
+    text-align: center;
+    padding: 40px 0px 0px;
+
 }
